@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  margin-left: 450px;
+  margin-top: 250px;
+}
+.on-button {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 100px;
+  background-color: white;
+}
+
+.on {
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  color: blueviolet;
+  margin-bottom: 20px;
+  border: lightgray solid 2px;
+  border-radius: 5px;
+}
+
+.off-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.off {
+  width: 100px;
+  height: 60px;
+  background-color: blueviolet;
+  color: white;
+  margin-bottom: 20px;
+  border: lightgray solid 2px;
+  border-radius: 5px;
+}
+
+.validation {
+  height: 60px;
+  margin-left: 250px;
+  width: 120px;
+  height: 80px;
+  margin-top: 50px;
+  background-color: red;
+  color: white;
+  border: lightgray solid 2px;
+  border-radius: 5px;
+}
