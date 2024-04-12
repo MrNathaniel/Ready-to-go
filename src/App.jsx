@@ -63,11 +63,17 @@ function App() {
             OFF
           </button>
         </div>
-        <button className="no-way">NO WAY!</button>
-        <button className="go">GO!</button>
-        <button
-          className={switch1 && switch2 && switch3 === false ? "no-way" : "go"}
-        />
+        <div className="launch-button">
+          <button className="no-way">NO WAY!</button>
+          <button className="go">GO!</button>
+          <button
+            className={
+              switch1 === false && switch2 === false && switch3 === false
+                ? "no-way"
+                : "go"
+            }
+          />
+        </div>
       </div>
     </>
   );
