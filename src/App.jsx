@@ -12,18 +12,16 @@ function App() {
       <div className="buttons">
         <div className="on-button">
           <button
-            className="on"
+            className={switch1 === true ? "off" : "on"}
             onClick={() => {
               setSwitch1(true);
-              switch1 === true ? background - color : blueviolet;
-              color: white: null;
             }}
           >
             ON
           </button>
 
           <button
-            className="on"
+            className={switch2 === true ? "off" : "on"}
             onClick={() => {
               setSwitch2(true);
             }}
@@ -31,7 +29,7 @@ function App() {
             ON
           </button>
           <button
-            className="on"
+            className={switch3 === true ? "off" : "on"}
             onClick={() => {
               setSwitch3(true);
             }}
@@ -41,7 +39,7 @@ function App() {
         </div>
         <div className="off-button">
           <button
-            className="off"
+            className={switch1 === false ? "off" : "on"}
             onClick={() => {
               setSwitch1(false);
             }}
@@ -49,7 +47,7 @@ function App() {
             OFF
           </button>
           <button
-            className="off"
+            className={switch2 === false ? "off" : "on"}
             onClick={() => {
               setSwitch2(false);
             }}
@@ -57,7 +55,7 @@ function App() {
             OFF
           </button>
           <button
-            className="off"
+            className={switch3 === false ? "off" : "on"}
             onClick={() => {
               setSwitch3(false);
             }}
@@ -65,7 +63,11 @@ function App() {
             OFF
           </button>
         </div>
-        <button className="validation"> NO WAY!</button>
+        <button className="no-way">NO WAY!</button>
+        <button className="go">GO!</button>
+        <button
+          className={switch1 && switch2 && switch3 === false ? "no-way" : "go"}
+        />
       </div>
     </>
   );
